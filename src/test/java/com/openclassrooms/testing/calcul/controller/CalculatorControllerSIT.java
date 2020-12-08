@@ -38,7 +38,7 @@ public class CalculatorControllerSIT {
 		// GIVEN
 		when(calculator.add(2, 3)).thenReturn(5);
 
-		// WHEN
+		//  WHEN
 		final MvcResult result = mockMvc.perform(
 				MockMvcRequestBuilders.post("/calculator")
 						.param("leftArgument", "2")
